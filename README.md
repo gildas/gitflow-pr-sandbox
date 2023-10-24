@@ -32,5 +32,5 @@ Make sure to:
 
 ## TODO
 
-- Use [gildas/gitflow-hooks](gildas/gitflow-hooks) to initalize and configure git flow.
+- Use [gildas/gitflow-hooks](https://github.com/gildas/gitflow-hooks) to initalize and configure git flow.
 - Implement all this with [bitbucket](https://bitbucket.org).
