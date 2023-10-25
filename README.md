@@ -147,7 +147,7 @@ git pull
 
 And finish the release:
 ```sh
-git flow relase finish 1.0.0
+git flow release finish 1.0.0
 ```
 
 ## TODO
