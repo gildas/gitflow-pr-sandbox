@@ -66,8 +66,7 @@ Otherwise, create the PR:
 gh pr create \
   --title "Merge feature myfeature" \
   --body  "Feature myfeature" \
-  --base  dev \
-  --repo  gildas/gitflow-pr-sandbox
+  --base  dev
 ```
 
 Now, as the PR reviewer, log on github and merge the PR **without** deleting the feature branch. Or use the CLI:
@@ -130,8 +129,7 @@ Otherwise, create the PR:
 gh pr create \
   --title "Merge release 1.0.0" \
   --body  "Release 1.0.0" \
-  --base  master \
-  --repo  gildas/gitflow-pr-sandbox
+  --base  master
 ```
 
 Now, as the PR reviewer, log on github and merge the PR **without** deleting the release branch. Or use the CLI:
