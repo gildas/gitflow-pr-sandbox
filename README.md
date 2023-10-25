@@ -138,7 +138,7 @@ Now, as the PR reviewer, log on github and merge the PR **without** deleting the
 
 ```sh
 gh pr merge \
-  --subject 'Merged release 1.0.-'
+  --subject 'Merged release 1.0.0'
 ```
 
 Back to the release _baker_, grab the merge:
