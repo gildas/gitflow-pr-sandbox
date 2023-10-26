@@ -4,4 +4,4 @@ package main
 var commit string
 
 // VERSION is the version of this application
-var VERSION = "1.1.0" + commit
+var VERSION = "1.1.1" + commit
