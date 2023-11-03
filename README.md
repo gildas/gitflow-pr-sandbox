@@ -195,7 +195,7 @@ Now, as the Pull Request reviewer, log on github and merge the Pull Request **wi
 
 ```sh
 gh pr merge \
-  --subject 'Merged hotfix 1.0.0'
+  --subject 'Merged hotfix 1.0.1'
 ```
 
 Back to the hotfix maker, grab the merge:
@@ -206,5 +206,5 @@ git pull
 
 And finish the hotfix:
 ```sh
-git flow hotfix finish 1.0.0
+git flow hotfix finish 1.0.1
 ```
