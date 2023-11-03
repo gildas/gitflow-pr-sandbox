@@ -9,6 +9,10 @@ We assume the following:
 
 The example app is written in Go, but it does not really matter as we will not even compile it.
 
+For instructions using [Bitbucket](https://bitbucket.org), please go to the [Bitbucket repository](https://bitbucket.org/gildas_cherruel/gitflow-pr-sandbox).
+
+For instructions using [GitLab](https://gitlab.com/about), please go to the [GitLab repository](https://gitlab.com/gildas_cherruel/gitflow-pr-sandbox).
+
 ## Clone the repository
 
 Using [gh](https://cli.github.com), let's clone this sandbox:
