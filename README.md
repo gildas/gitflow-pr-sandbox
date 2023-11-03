@@ -30,6 +30,13 @@ Make sure to:
 - name the `develop` branch `dev` (I never liked that long label)
 - set the version tag prefix to `v`
 
+If you want to use my [git flow hooks](https://github.com/gildas/gitflow-hooks), go to its folder, and initialize the hooks with the path of your repository folder:
+```sh
+./hook-it ~/Documents/path/to/gitflow-pr-sandbox
+```
+
+This will initialize git flow, and copy the appropriate hooks.
+
 ## Developing a feature PR style
 
 Let's start our feature:
