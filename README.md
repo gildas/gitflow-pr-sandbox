@@ -40,7 +40,7 @@ git flow feature start myfeature
 
 Add and commit some changes...
 
-You can share the feature with fellow developers by pushing the branch to the repository (do not use `git flow feature publish` since we will use it to create the PR).
+You can share the feature with fellow developers by pushing the branch to the repository (do not use `git flow feature publish` since we will use it to create the Pull Request).
 
 ```sh
 git push --set-upstream origin feature/myfeature
@@ -58,9 +58,9 @@ Once the feature is finished, publish the feature:
 git flow feature publish myfeature
 ```
 
-If you already use my [git flow hooks](https://github.com/gildas/gitflow-hooks), the PR will be automatically created.
+If you use my [git flow hooks](https://github.com/gildas/gitflow-hooks), the Pull Request will be automatically created.
 
-Otherwise, create the PR:
+Otherwise, create the Pull Request:
 
 ```sh
 gh pr create \
@@ -69,7 +69,7 @@ gh pr create \
   --base  dev
 ```
 
-Now, as the PR reviewer, log on github and merge the PR **without** deleting the feature branch. Or use the CLI:
+Now, as the Pull Request reviewer, log on github and merge the Pull Request **without** deleting the feature branch. Or use the CLI:
 
 ```sh
 gh pr merge \
@@ -99,7 +99,7 @@ Let's start a new release:
 git flow release start 1.0.0
 ```
 
-If you already use my [git flow hooks](https://github.com/gildas/gitflow-hooks), you will get the auto-versioning for [node.js](https://nodejs.org) and [Go](https://go.dev) based projects.
+If you use my [git flow hooks](https://github.com/gildas/gitflow-hooks), you will get the auto-versioning for [node.js](https://nodejs.org) and [Go](https://go.dev) based projects.
 
 If not, you should modify your project's version manually, in the current case:
 
@@ -115,24 +115,24 @@ You can also share the release branch with others by pushing it to the repositor
 git push -u origin release/1.0.0
 ```
 
-When all bugs have been fixed and the QA process is done, the release should be published to created a PR:
+When all bugs have been fixed and the QA process is done, the release should be published to created a Pull Request:
 
 ```sh
 git flow release publish
 ```
 
-If you already use my [git flow hooks](https://github.com/gildas/gitflow-hooks), the PR will be automatically created.
+If you use my [git flow hooks](https://github.com/gildas/gitflow-hooks), the Pull Request will be automatically created.
 
-Otherwise, create the PR:
+Otherwise, create the Pull Request:
 
 ```sh
 gh pr create \
   --title "Merge release 1.0.0" \
-  --body  "Release 1.0.0" \
+  --body  "Release 1.0.0." \
   --base  master
 ```
 
-Now, as the PR reviewer, log on github and merge the PR **without** deleting the release branch. Or use the CLI:
+Now, as the Pull Request reviewer, log on github and merge the Pull Request **without** deleting the release branch. Or use the CLI:
 
 ```sh
 gh pr merge \
@@ -158,7 +158,7 @@ Let's start a new hotfix:
 git flow hotfix start 1.0.1
 ```
 
-If you already use my [git flow hooks](https://github.com/gildas/gitflow-hooks), you will get the auto-versioning for [node.js](https://nodejs.org) and [Go](https://go.dev) based projects.
+If you use my [git flow hooks](https://github.com/gildas/gitflow-hooks), you will get the auto-versioning for [node.js](https://nodejs.org) and [Go](https://go.dev) based projects.
 
 If not, you should modify your project's version manually, in the current case:
 
@@ -174,15 +174,15 @@ You can also share the hotfix branch with others by pushing it to the repository
 git push -u origin hotfix/1.0.1
 ```
 
-When all bugs have been fixed and the QA process is done, the hotfix should be published to created a PR:
+When all bugs have been fixed and the QA process is done, the hotfix should be published to created a Pull Request:
 
 ```sh
 git flow hotfix publish
 ```
 
-If you already use my [git flow hooks](https://github.com/gildas/gitflow-hooks), the PR will be automatically created.
+If you use my [git flow hooks](https://github.com/gildas/gitflow-hooks), the Pull Request will be automatically created.
 
-Otherwise, create the PR:
+Otherwise, create the Pull Request:
 
 ```sh
 gh pr create \
@@ -191,7 +191,7 @@ gh pr create \
   --base  master
 ```
 
-Now, as the PR reviewer, log on github and merge the PR **without** deleting the hotfix branch. Or use the CLI:
+Now, as the Pull Request reviewer, log on github and merge the Pull Request **without** deleting the hotfix branch. Or use the CLI:
 
 ```sh
 gh pr merge \
@@ -208,8 +208,3 @@ And finish the hotfix:
 ```sh
 git flow hotfix finish 1.0.0
 ```
-
-## TODO
-
-- Use [gildas/gitflow-hooks](https://github.com/gildas/gitflow-hooks) to initalize and configure git flow.
-- Implement all this with [bitbucket](https://bitbucket.org).
